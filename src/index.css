@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slider-1 {
+  margin-top: -90px;
+  z-index: 10;
+  max-width: 100%;
+  display: flex;
+  min-height: 250px;
+  padding: 0 5px;
+}
+
+.slide-1 {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide-1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
