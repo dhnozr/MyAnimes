@@ -12,13 +12,10 @@
 }
 
 .slide-1 {
-  width: 150px;
   display: flex;
-  justify-content: center;
-}
-
-.swiper-slide-1 img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px;
 }
