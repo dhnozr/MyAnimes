@@ -30,6 +30,9 @@ export default function Hero() {
         .then(data => {
           return data.data;
         }),
+    staleTime: 5 * 60 * 1000,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
   });
 
   const swiperRef = useRef(null);
@@ -120,7 +123,7 @@ export default function Hero() {
                 loading='lazy'
                 alt=''
               />
-              <div className='absolute inset-0 bg-black/30 rounded-2xl'></div>
+              <div className='absolute inset-0 bg-black/20 rounded-2xl'></div>
               <div className='absolute bottom-4 left-2 max-w-[220px] text-white transition-transform duration-300 group-hover:-translate-y-8'>
                 <h3>{anime?.title}</h3>
                 <div className='flex items-center gap-1 text-xs '>
